@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      color: #c7254e;
+    }
+    table caption {
+      text-align: center;
+      text-transform: capitalize;
+    }
+    table th {
+      text-transform: uppercase;
+    }
+    table td {
+      text-transform: capitalize;
+    }   
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>基本的表格布局 .table</h1>
+    <table class="table">
+      <caption>basic table layout</caption>
+      <thead>
+        <tr>
+          <th>city</th>
+          <th>team</th>
+          <th>player</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>los angeles</td>
+          <td>lakers</td>
+          <td>kobe bryant</td>
+        </tr>
+        <tr>
+          <td>golden state</td>
+          <td>warriors</td>
+          <td>stephen curry</td>
+        </tr>
+        <tr>
+          <td>orlando</td>
+          <td>magic</td>
+          <td>tracy macgrady</td>
+        </tr>        
+      </tbody>
+    </table>    
+  </div>
+
+  <div class="container">
+    <h1>条纹表格布局 .table-striped</h1>
+    <table class="table table-striped">
+      <caption>striped table layout</caption>
+      <thead>
+        <tr>
+          <th>city</th>
+          <th>team</th>
+          <th>player</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>los angeles</td>
+          <td>lakers</td>
+          <td>kobe bryant</td>
+        </tr>
+        <tr>
+          <td>golden state</td>
+          <td>warriors</td>
+          <td>stephen curry</td>
+        </tr>
+        <tr>
+          <td>orlando</td>
+          <td>magic</td>
+          <td>tracy macgrady</td>
+        </tr>        
+      </tbody>
+    </table>    
+  </div>
+
+  <div class="container">
+    <h1>边框表格布局 .table-bordered</h1>
+    <table class="table table-bordered">
+      <caption>bordered table layout</caption>
+      <thead>
+        <tr>
+          <th>city</th>
+          <th>team</th>
+          <th>player</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>los angeles</td>
+          <td>lakers</td>
+          <td>kobe bryant</td>
+        </tr>
+        <tr>
+          <td>golden state</td>
+          <td>warriors</td>
+          <td>stephen curry</td>
+        </tr>
+        <tr>
+          <td>orlando</td>
+          <td>magic</td>
+          <td>tracy macgrady</td>
+        </tr>        
+      </tbody>
+    </table>    
+  </div>
+
+  <div class="container">
+    <h1>悬停表格布局 .table-hover</h1>
+    <table class="table table-hover">
+      <caption>hover table layout</caption>
+      <thead>
+        <tr>
+          <th>city</th>
+          <th>team</th>
+          <th>player</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>los angeles</td>
+          <td>lakers</td>
+          <td>kobe bryant</td>
+        </tr>
+        <tr>
+          <td>golden state</td>
+          <td>warriors</td>
+          <td>stephen curry</td>
+        </tr>
+        <tr>
+          <td>orlando</td>
+          <td>magic</td>
+          <td>tracy macgrady</td>
+        </tr>        
+      </tbody>
+    </table>    
+  </div>
+
+  <div class="container">
+    <h1>精简表格布局 .table-condensed</h1>
+    <table class="table table-condensed">
+      <caption>condensed table layout</caption>
+      <thead>
+        <tr>
+          <th>city</th>
+          <th>team</th>
+          <th>player</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>los angeles</td>
+          <td>lakers</td>
+          <td>kobe bryant</td>
+        </tr>
+        <tr>
+          <td>golden state</td>
+          <td>warriors</td>
+          <td>stephen curry</td>
+        </tr>
+        <tr>
+          <td>orlando</td>
+          <td>magic</td>
+          <td>tracy macgrady</td>
+        </tr>        
+      </tbody>
+    </table>    
+  </div>
+
+  <div class="container">
+    <h1>根据状态显示不同的背景颜色</h1>
+    <table class="table">
+      <caption>condensed table layout</caption>
+      <thead>
+        <tr>
+          <th>city</th>
+          <th>team</th>
+          <th>player</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="danger">
+          <td>los angeles</td>
+          <td>lakers</td>
+          <td>kobe bryant</td>
+        </tr>
+        <tr class="warning">
+          <td>houston</td>
+          <td>rockets</td>
+          <td>james harden</td>
+        </tr>        
+        <tr class="success">
+          <td>golden state</td>
+          <td>warriors</td>
+          <td>stephen curry</td>
+        </tr>
+        <tr class="info">
+          <td>orlando</td>
+          <td>magic</td>
+          <td>tracy macgrady</td>
+        </tr>        
+        <tr class="active">
+          <td>milwaukee</td>
+          <td>bucks</td>
+          <td>jabari parker</td>
+        </tr>        
+      </tbody>
+    </table>    
+  </div>
+
+  <div class="container">
+    <h1>响应式表格布局 .table-responsive</h1>
+    <div class="table-responsive">
+      <table class="table table-condensed">
+        <caption>condensed table layout</caption>
+        <thead>
+          <tr>
+            <th>city</th>
+            <th>team</th>
+            <th>player</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>los angeles</td>
+            <td>lakers</td>
+            <td>kobe bryant</td>
+          </tr>
+          <tr>
+            <td>golden state</td>
+            <td>warriors</td>
+            <td>stephen curry</td>
+          </tr>
+          <tr>
+            <td>orlando</td>
+            <td>magic</td>
+            <td>tracy macgrady</td>
+          </tr>        
+        </tbody>
+      </table>     
+    </div>   
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
