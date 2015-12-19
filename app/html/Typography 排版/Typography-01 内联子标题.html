@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内联子标题</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Georgia, serif;
+    }
+    .para {
+      -ms-word-break: break-all;
+          word-break: break-all;
+    }    
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>内联子标题</h1>
+    <pre>
+      1. &lt;small&gt;&lt;/small&gt;
+      2. .small
+      3. 内联子标题: 字体更小，颜色更浅
+    </pre>
+    <h2>
+      我是二级标题<small>我是内联子标题</small>
+    </h2>
+    <h3>
+      我是三级标题<p class="small">我是内联子标题</p>
+    </h3>
+  </div>
+
+  <div class="container">
+    <h1>引导主体副本</h1>
+    <pre>
+      1. .lead
+      2. 引导主体副本: 字体更大更粗、行高更高的文本
+    </pre>
+    <h2>没有引导主体副本</h2>
+    <p class="para">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+    <h2>有引导主体副本</h2>
+    <p class="lead para">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
