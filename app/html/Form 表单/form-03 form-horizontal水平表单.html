@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平表单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    pre {
+      color: #c7254e;
+    }   
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>水平表单</h1>
+    <pre>
+      1. form[role="form"].form-horizontal
+      2. div.form-group
+      3. label.control-label
+      4. input.form-control, select.form-control, textarea.form-control
+    </pre>  
+    <form role="form" class="form-horizontal">
+      <!-- 输入框 -->
+      <div class="form-group">
+        <label class="control-label / col-md-2" for="name">姓名</label>
+        <div class="col-sm-5">
+          <input class="form-control" name="name" type="text">
+        </div>  
+      </div>
+      <!-- 下拉选择框 -->
+      <div class="form-group">
+        <label class="control-label / col-md-2" for="age">年龄</label>
+        <div class="col-sm-5">
+          <select class="form-control" name="age">
+            <option value="0">22</option>
+            <option value="1">23</option>
+            <option value="2">24</option>
+          </select>
+          <p class="help-block small">这里是块级帮助文本的实例</p>
+        </div>
+      </div>
+      <!-- 单选框1 -->
+      <div class="form-group">
+        <label class="control-label / col-md-2" for="sex"></label>
+        <div class="col-sm-5">
+          <input type="radio" name="sex">男
+          <input type="radio" name="sex">女
+          <input type="radio" name="sex">中性
+        </div>
+      </div>
+      <!-- 复选框1 -->    
+      <div class="form-group">
+        <label class="control-label / col-md-2" for="career"></label>
+        <div class="col-sm-5">
+          <input type="checkbox" name="career">职业1
+          <input type="checkbox" name="career">职业2
+          <input type="checkbox" name="career">职业3
+        </div>
+      </div>
+      <!-- 单选框2 -->
+      <div class="form-group">
+        <div class="col-sm-5 col-md-offset-2">
+          <div class="radio">
+            <label>
+              <input id="option1" name="option" type="radio" value="option1"> 选项 1
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="option2" name="option" type="radio" value="option2"> 选项 2
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input id="option3" name="option" type="radio" value="option3"> 选项 3
+            </label>
+          </div>                    
+        </div>
+      </div>
+      <!-- 复选框2 -->
+      <div class="form-group">
+        <div class="col-sm-5 col-md-offset-2">
+          <div class="checkbox">
+            <label><input value="" type="checkbox">选项 1</label>
+          </div>
+          <div class="checkbox">
+            <label><input value="" type="checkbox">选项 2</label>
+          </div>
+          <div class="checkbox">
+            <label><input value="" type="checkbox">选项 3</label>
+          </div>          
+        </div>
+      </div>
+      <!-- 文本框 -->
+      <div class="form-group">
+        <label class="control-label / col-md-2" for="desc">描述</label>
+        <div class="col-sm-5">
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+      </div>
+      <!-- 按钮 -->
+      <div class="form-group">
+        <div class="col-md-5 col-md-offset-2">
+          <button class="btn btn-default" type="button">提交</button>
+        </div>
+      </div>            
+    </form>     
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
