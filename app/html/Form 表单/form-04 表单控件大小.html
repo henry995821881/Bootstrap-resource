@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单控件大小</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    pre {
+      color: #c7254e;
+    }    
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>表单控件高度</h1>
+    <pre>
+      1. 最高的：input.input-lg
+      2. 默认的：
+      3. 最低的：input.input-sm 
+    </pre>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label class="control-label col-md-3">input-lg</label>
+        <div class="col-md-6">
+          <input class="form-control input-lg" type="text" placeholder=".input-lg">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-md-3">input-default</label>
+        <div class="col-md-6">
+          <input class="form-control" type="text" placeholder="默认高度(相当于.input-md)">
+        </div>
+      </div>     
+      <div class="form-group">
+        <label class="control-label col-md-3">input-sm</label>
+        <div class="col-md-6">
+          <input class="form-control input-sm" type="text" placeholder=".input-sm">
+        </div>
+      </div>                      
+    </form>
+
+    <h1>表单控件宽度</h1>
+    <pre>
+      1. 父容器 div.col-lg-x
+      2. input 默认100%占满
+    </pre>
+    <form role="form">
+      <div class="row">
+        <div class="col-lg-2">
+          <input class="form-control" type="text" placeholder=".col-lg-2">
+        </div>
+        <div class="col-lg-3">
+          <input class="form-control" type="text" placeholder=".col-lg-3">
+        </div>
+        <div class="col-lg-4">
+          <input class="form-control" type="text" placeholder=".col-lg-4">
+        </div>                        
+      </div>
+    </form>   
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
