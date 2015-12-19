@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单控件状态</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      color: #c7254e;
+    }
+    label {
+      text-transform: capitalize;
+    }       
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>表单控件状态</h1>
+    <form class="form-horizontal" role="form">
+      <!-- jquery 的 focus() 方法实现的获得焦点 -->
+      <div class="form-group">
+        <label class="control-label col-sm-4">focus</label>
+        <div class="col-sm-4">
+          <input class="form-control" id="focused" type="text" placeholder="该输入框获得焦点...">
+        </div>
+      </div>
+      <!-- input 的 disabled 属性 -->
+      <div class="form-group">
+        <label class="control-label col-sm-4">disabled</label>
+        <div class="col-sm-4">
+          <input class="form-control" id="disabled" type="text" placeholder="该输入框禁止输入..." disabled>
+        </div>
+      </div>
+      <!-- 给 fieldset 添加 disabled 属性,内部的所有控件处于禁用状态 -->
+      <fieldset disabled>
+        <div class="form-group">
+          <label class="control-label col-sm-4">fieldset text disabled</label>
+          <div class="col-sm-4">
+            <input class="form-control" id="fieldset-text-disabled" type="text" placeholder="禁止输入">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-4">fieldset select disabled</label>
+          <div class="col-sm-4">
+            <select class="form-control" id="fieldset-select-disabled">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <!-- .has-success 成功状态 -->
+      <div class="form-group has-success">
+        <label class="control-label col-sm-4" for="input-success">input success</label>
+        <div class="col-sm-4">
+          <input class="form-control" id="input-success" type="text">
+        </div>
+      </div>
+      <!-- .has-warning 警告状态 -->
+      <div class="form-group has-warning">
+        <label class="control-label col-sm-4" for="input-warning">input warning</label>
+        <div class="col-sm-4">
+          <input class="form-control" id="input-warning" type="text">
+        </div>
+      </div>
+      <!-- .has-error 错误状态 -->
+      <div class="form-group has-error">
+        <label class="control-label col-sm-4" for="input-error">input error</label>
+        <div class="col-sm-4">
+          <input class="form-control" id="input-error" type="text">
+        </div>
+      </div>     
+    </form>    
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>()
+  <script>
+    $(function(){
+      // 方法一
+      $('#focused').focus();
+      
+      // 方法二
+      // $('#focused').trigger('focus');
+    });
+  </script>
+</body>
+</html>
