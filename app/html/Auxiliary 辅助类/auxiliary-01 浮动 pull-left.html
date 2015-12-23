@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      color: #c7254e;
+    }
+    .para {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>浮动</h1>
+    <pre>
+      1. .pull-left: 左浮动
+      2. .pull-right: 右浮动
+      3. .center-block: 居中
+      4. .clearfix: 清除浮动
+    </pre>    
+    <div>
+      <!-- 布局一 -->
+      <p class="pull-left">左浮动1</p>
+      <p class="pull-right">右浮动1</p>
+      <p class="clearfix"></p>
+      <p class="center-block text-center bg-danger para">center-block1</p>
+      <!-- 布局二 -->
+      <div class="clearfix">
+        <p class="pull-left">左浮动2</p>
+        <p class="pull-right">右浮动2</p>
+      </div>
+      <p class="center-block text-center bg-danger para">center-block2</p>
+    </div>
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
