@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>显示与隐藏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      color: #c7254e;
+    }
+    .text-hide-demo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      width: 125px;
+      height: 150px;
+      margin: 0 auto;
+      font: 24px bolder;
+      text-align: center;
+      text-transform: capitalize;
+      color: #c7254e;
+      background: url(../../img/girl-sketch.jpg);
+      background-size: cover;
+    }  
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>显示与隐藏</h1>
+    <pre>
+      1. .show: 强制元素显示
+      2. .hidden: 强制元素隐藏
+      3. .sr-only: 除了屏幕阅读器外,其他设备上隐藏元素
+      4. .sr-only-focusable: 与 .sr-only 结合使用,在元素获取焦点时显示(如键盘操作的用户)
+      5. .text-hide: 将页面元素所包含的文本内容替换为背景图
+    </pre>
+    <div>
+      <p class="show">.show:  display:block;</p>
+      <p class="hidden">.hidden:  display:none;</p>
+      <p class="text-hide-demo">uoload your sculpture</p>
+    </div>
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+      if (hasBGI) {
+        $('.text-hide-demo').addClass('text-hide');
+      }
+    });
+  </script>
+</body>
+</html>
