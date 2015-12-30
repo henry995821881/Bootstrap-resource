@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设备响应式</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    .container {
+      padding: 40px;
+    }
+      .demo {
+        box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;
+        background-color: #dedef8;
+      } 
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>设备响应式</h1>
+    <pre>
+      1. 隐藏：.hidden-xs, .hidden-sm, .hidden-md, .visible-lg
+      2. 可见：.visible-xs-*, .visible-sm-*, .visible-md-*, .visible-lg-*
+      3. 变体：.visible-xs-block, .visible-xs-inline, .visible-xs-inline-block
+    </pre>
+    <div class="row visible-on">
+      <div class="col-xs-6 col-sm-3 demo">
+        <span class="hidden-xs">.hidden-xs</span>
+        <span class="visible-xs">&radic; .visible-xs</span>
+      </div>
+      <div class="col-xs-6 col-sm-3 demo">
+        <span class="hidden-sm">.hidden-sm</span>
+        <span class="visible-sm">&radic; .visible-sm</span>
+      </div>
+      <div class="clearfix visible-xs"></div>
+      <div class="col-xs-6 col-sm-3 demo">
+        <span class="hidden-md">.hidden-md</span>
+        <span class="visible-md">&radic; .visible-md</span>
+      </div>
+      <div class="col-xs-6 col-sm-3 demo">
+        <span class="hidden-lg">.hidden-lg</span>
+        <span class="visible-lg">&radic; .visible-lg</span>
+      </div>     
+    </div>
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
