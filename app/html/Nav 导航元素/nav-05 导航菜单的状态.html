@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航菜单的状态</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      margin: 30px 0;
+    }
+    pre {
+      color: #c7254e;
+    }   
+  </style>
+</head>
+<body>
+  
+	<div class="container">
+    <h1>标签式导航菜单</h1>
+    <pre>
+      1. ul.nav.nav-tabs
+      2. li.active         激活
+      3. li.disabled       禁用
+      4. li.hidden/li.hide 隐藏
+    </pre>
+    <ul class="nav nav-tabs">
+      <li class="disabled"><a href="#">HOU(disabled)</a></li>
+      <li class="active"><a href="#">LAL(active)</a></li>
+      <li class="hidden"><a href="#">CLE(hidden)</a></li>
+      <li class="hide"><a href="#">LAC(hide)</a></li>
+      <li><a href="#">GSW</a></li>
+      <li><a href="#">CHI</a></li>
+      <li><a href="#">BOS</a></li>
+      <li><a href="#">SAS</a></li>
+    </ul>
+
+    <h1>胶囊式导航菜单</h1>
+    <pre>
+      1. ul.nav.nav-pills
+      2. li.active         激活
+      3. li.disabled       禁用
+      4. li.hidden/li.hide 隐藏
+    </pre>
+    <ul class="nav nav-pills">
+      <li class="disabled"><a href="#">HOU(disabled)</a></li>
+      <li class="active"><a href="#">LAL(active)</a></li>
+      <li class="hidden"><a href="#">CLE(hidden)</a></li>
+      <li class="hide"><a href="#">LAC(hide)</a></li>
+      <li><a href="#">GSW</a></li>
+      <li><a href="#">CHI</a></li>
+      <li><a href="#">BOS</a></li>
+      <li><a href="#">SAS</a></li>
+    </ul>        
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
