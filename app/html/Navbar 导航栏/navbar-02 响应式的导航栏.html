@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>响应式的导航栏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      margin: 30px 0;
+    }
+    pre {
+      color: #c7254e;
+    }   
+  </style>
+</head>
+<body>
+ 
+  <!-- 必须引用 Bootstrap 折叠(Collapse)插件 -->
+	<div class="container">
+    <h1>响应式的导航栏</h1>
+    <pre>
+      1. nav.navbar.navbar-default
+      2. nav[role="navigation"]: 有助于增加可访问性
+      3. div.navbar-header: 标题
+      4. a.navbar-brand: 标题文本
+      5. ul.nav.navbar-nav
+    </pre>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">导航栏标题</a>
+      </div>
+      <ul class="nav navbar-nav">
+      <li><a href="#">LAL</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <span>GSW</span><i class="caret"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">CURRY</a></li>
+          <li><a href="#">GREEN</a></li>
+          <li><a href="#">THOMSON</a></li>
+        </ul>
+      </li>
+      <li><a href="#">CHI</a></li>
+      <li><a href="#">BOS</a></li>
+      <li><a href="#">SAS</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
