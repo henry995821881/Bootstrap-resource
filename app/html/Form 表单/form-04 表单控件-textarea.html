@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单控件-textarea</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    /**/   
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>垂直表单 textarea</h1>
+    <form role="form">
+      <div class="form-group">
+        <label for="name">文本框</label>
+        <!-- rows 属性可用于控制行数 -->
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+    </form>    
+    <h1>水平表单 textarea</h1>
+    <form role="form" class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-md-3" for="name">文本框</label>
+        <!-- rows 属性可用于控制行数 -->
+        <div class="col-md-6">
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+      </div>
+    </form>     
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
