@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>带下拉菜单的导航菜单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      margin: 30px 0;
+    }
+    pre {
+      color: #c7254e;
+    }   
+  </style>
+</head>
+<body>
+  
+	<div class="container">
+    <h1>带下拉菜单的标签式导航菜单</h1>
+    <pre>
+      1. ul.nav.nav-tabs
+      2. li.dropdown
+      3. a.dropdown-toggle[data-toggle="dropdown"]
+      4. ul.dropdown-menu
+    </pre>
+    <ul class="nav nav-tabs">
+      <li><a href="#">LAL</a></li>
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <span>GSW</span><span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">CURRY</a></li>
+          <li><a href="#">GREEN</a></li>
+          <li><a href="#">THOMSON</a></li>
+        </ul>
+      </li>
+      <li><a href="#">CHI</a></li>
+      <li><a href="#">BOS</a></li>
+      <li><a href="#">SAS</a></li>
+    </ul>
+
+    <h1>带下拉菜单的胶囊式导航菜单</h1>
+    <pre>
+      1. ul.nav.nav-pills
+      2. li.dropdown
+      3. a.dropdown-toggle[data-toggle="dropdown"]
+      4. ul.dropdown-menu      
+    </pre>
+    <ul class="nav nav-pills">
+      <li><a href="#">LAL</a></li>
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          <span>GSW</span><span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">CURRY</a></li>
+          <li><a href="#">GREEN</a></li>
+          <li><a href="#">THOMSON</a></li>
+        </ul>
+      </li>
+      <li><a href="#">CHI</a></li>
+      <li><a href="#">BOS</a></li>
+      <li><a href="#">SAS</a></li>
+    </ul>  
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
