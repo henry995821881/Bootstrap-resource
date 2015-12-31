@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两端对齐的导航菜单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      margin: 30px 0;
+    }
+    pre {
+      color: #c7254e;
+    }   
+  </style>
+</head>
+<body>
+  
+  <!-- 
+      屏幕宽度大于768px时,使用 .nav-justified 让导航菜单与父元素等宽
+      在更小的屏幕上,导航链接会堆叠
+    -->
+	<div class="container">
+    <h1>两端对齐的标签式导航菜单</h1>
+    <pre>
+      1. ul.nav.nav-tabs.nav-justified
+    </pre>
+    <ul class="nav nav-tabs nav-justified">
+      <li><a href="#">LAL</a></li>
+      <li><a href="#">GSW</a></li>
+      <li><a href="#">CHI</a></li>
+      <li><a href="#">BOS</a></li>
+      <li><a href="#">SAS</a></li>
+    </ul>
+
+    <h1>两端对齐的胶囊式导航菜单</h1>
+    <pre>
+      1. ul.nav.nav-pills.nav-justified
+    </pre>
+    <ul class="nav nav-pills nav-justified">
+      <li><a href="#">LAL</a></li>
+      <li><a href="#">GSW</a></li>
+      <li><a href="#">CHI</a></li>
+      <li><a href="#">BOS</a></li>
+      <li><a href="#">SAS</a></li>
+    </ul>        
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
