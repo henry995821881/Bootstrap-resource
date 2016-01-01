@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单控件-select</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      color: #c7254e;
+    }   
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>选择列表 select</h1>
+    <form role="form">
+      <div class="form-group">
+       <label for="name">选择列表</label>
+       <select class="form-control" id="demo1">
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+       </select>
+      </div>
+    </form>
+
+    <h1>可多选的选择列表 select[multiple]</h1>
+    <form role="form">
+      <div class="form-group">
+       <label for="name">选择列表</label>
+       <select class="form-control" id="demo2" multiple>
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+       </select>
+      </div>
+    </form>     
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(function(){
+      //$('#demo2').find('option:selected')[0].value
+    });
+  </script>
+</body>
+</html>
