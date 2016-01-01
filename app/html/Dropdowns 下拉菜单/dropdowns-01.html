@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    /**/   
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>下拉菜单</h1>
+    <pre>
+      1. div.dropdown#menuName
+      2. button[data-toggle="dropdown"]
+      3. ul.dropdown-menu[aria-labelledby="menuName"]
+      4. li.dropdown-header
+    </pre>
+    <div class="dropdown" id="myDropdownMenu">
+      <button class="btn btn-primary" data-toggle="dropdown" type="button">
+        <span>NBA TEAM</span>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="myDropdownMenu">
+        <li class="dropdown-header">WESTERN</li>
+        <li><a href="#">LAL</a></li>
+        <li><a href="#">GSW</a></li>
+        <li><a href="#">CHI</a></li>
+        <li><a href="#">BOS</a></li>
+        <li><a href="#">SAS</a></li>
+      </ul>
+    </div>    
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
