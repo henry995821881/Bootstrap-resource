@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮下拉菜单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <style>
+    h1 {
+      margin: 30px 0;
+    }  
+  </style>
+</head>
+<body>
+
+	<div class="container">
+    <h1>不分割的按钮下拉菜单</h1>
+    <div class="btn-group">
+      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">
+        <span class="undivider">Christmas</span>
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li class="dropdown-header">WESTERN</li>
+        <li><a href="#">LAL</a></li>
+        <li><a href="#">GSW</a></li>
+        <li><a href="#">SAS</a></li>
+        <!-- 分隔线 -->
+        <li class="divider"></li>
+        <li class="dropdown-header">EASTERN</li>
+        <li><a href="#">CHI</a></li>
+        <li><a href="#">BOS</a></li>
+        <li><a href="#">MIA</a></li>
+      </ul>
+    </div>
+
+    <h1>具有大小的分割的按钮下拉菜单</h1>
+    <div class="btn-group">
+      <!-- .btn-lg 控制大小 -->
+      <button class="btn btn-success btn-lg" type="button">NBA TEAM</button>
+      <button class="btn btn-success dropdown-toggle btn-lg" data-toggle="dropdown" type="button">
+        <span class="caret"></span>
+        <span class="sr-only">屏幕阅读器可见</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-header">WESTERN</li>
+        <li><a href="#">LAL</a></li>
+        <li><a href="#">GSW</a></li>
+        <li><a href="#">CHI</a></li>
+        <li><a href="#">BOS</a></li>
+        <li><a href="#">SAS</a></li>
+      </ul>
+    </div>
+
+    <h1>向上的分割的按钮下拉菜单</h1>
+    <!-- .dropup 向上 -->
+    <div class="btn-group dropup">
+      <button class="btn btn-danger" type="button">NBA TEAM</button>
+      <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" type="button">
+        <span class="caret"></span>
+        <span class="sr-only">屏幕阅读器可见</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-header">EASTERN</li>
+        <li><a href="#">CLE</a></li>
+        <li><a href="#">MIA</a></li>
+        <li><a href="#">NYK</a></li>
+        <li><a href="#">BOS</a></li>
+        <li><a href="#">TOR</a></li>
+      </ul>
+    </div>    
+  </div>
+
+  <script src="../../js/lib/jquery/dist/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
